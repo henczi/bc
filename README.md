@@ -285,37 +285,45 @@ Suggested readings and sources
 Self-assessment questions
 1. What is the difference between permissioned and unpermissioned Blockchains?
 
-    > 
+    > Ki írhatja?
+
+    > Permissioned: Csak meghatározott résztvevők írhatnak a főkönyvbe
 
 
 2. What is the difference between public and consortial/private Blockchains?
 
-    > 
+    > Ki olvashatja?
+
+    > public: bárki olvashatja a főkönyvet
 
 
 3. Define key use cases for the 3 “most meaningful” combinations and argue about their rationale!
 
-    > 
+    > Public - Permissionless : Bitcoin, Ethereum
+
+    > Public - Permissioned : Land titles, Medicial records
+
+    > Private - Permisioned : Trading system
 
 
 4. What combinations can be implemented using Ethereum? (Hint: Enterprise Ethereum Alliance, Quorum)
 
-    > 
+    > Public - permissioned / permissionless ??
 
 
 5. What combinations can be implemented using Hyperledger Fabric? (hint: there’s no native cryptocurrency notion!)
 
-    > 
+    > ??
 
 
 6. For consortial, permissioned Blockchains - why is it not important for the Blockchain technology to possess a native cryptocurrency?
 
-    > 
+    > úgyis ismerik egymást ... ??
 
 
 7. What can be the main reasons for choosing a consortial, permissioned technology over a public, unpermissioned network for supply chain and asset tracking use cases?
 
-    > 
+    > Konkurrencia ne tudja nyomon követni..
 
 
 
@@ -331,27 +339,29 @@ Self-assessment questions
 
 1. What are “channels” in Hyperledger Fabric?
 
-    > 
+    > Biztosítják, hogy csak a résztvevők láthassák a tranzakciót
 
 
 2. What are “chaincodes” in Hyperledger Fabric? What is their relationship with channels?
 
-    > 
+    > Okos szerződések (smart contract), egy-egy csatornára vannak telepítve
 
 
 3. Describe the basic programming model of Hyperledger Fabric chaincodes! (the common properties across the supported languages)
 
-    > 
+    > Go, JavaScript (1.1-)
+
+    >
 
 
 4. Can we implement a UTXO-style cryptocurrency in Fabric with chaincodes?
 
-    > 
+    > Igen, https://github.com/hyperledger-archives/fabric/tree/master/examples/chaincode/go/utxo
 
 
 5. And does it make sense to do so? :) Why?
 
-    > 
+    > Há'hogyne... Memáméne
 
 
 6. Draw/describe the basic relationships of organizations, peers, ledgers and chaincodes in Hyperledger Fabric!
@@ -387,10 +397,10 @@ Self-assessment questions
 
 1. With some exceptions (e.g. Hyperledger Composer), smart contracts in Blockchain platforms don’t support “calling out” to external systems and services from a smart contract execution, as this can lead to consensus failures. Why?
 
-    > 
+    > külső hívás eredménye változhat (időzóna, tűzfal, autentikáció); rekurzió
 
 
 2. Instead, we generally use so-called oracles. What are these? What trust considerations have to be made?
 
-    > 
+    > Kapcsolatot biztosít a valós világ és a blokklánc közt. 
 
